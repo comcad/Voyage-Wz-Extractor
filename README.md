@@ -1,4 +1,4 @@
-# voyage-wz-extractor
+# Voyage-Wz-Extractor
 
 Pure Node.js extractor for MapleStory **v83** WZ (PKG1) asset files — no dependencies.
 
