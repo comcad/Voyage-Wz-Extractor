@@ -280,10 +280,11 @@ class ImgExtractor {
     return this.props('');
   }
   props(p) {
-    const r = this.r, node = {};
+    const r = this.r, node = {}, names = [];
     const count = r.cint();
     for (let i = 0; i < count; i++) {
       const name = r.strBlock(this.imgOff);
+      names.push(name);
       const t = r.u8();
       const sub = p ? `${p}/${name}` : name;
       switch (t) {
@@ -303,6 +304,9 @@ class ImgExtractor {
         default: throw new Error(`unknown prop type ${t} at ${sub}`);
       }
     }
+    // JS objects list integer-like keys first, in number order: keep the file's own order when that changes it
+    const keys = Object.keys(node);
+    if (keys.some((k, i) => k !== names[i])) node._order = names;
     return node;
   }
   ext(p) {
