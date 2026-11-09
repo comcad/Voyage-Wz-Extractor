@@ -30,19 +30,16 @@ It is the asset pipeline for [**Voyage Client**](https://github.com/comcad/Voyag
 
 ## 📦 Output Format
 
-The extractor takes a folder of `*.wz` files and produces a plain file tree:
+The extractor takes a folder of `*.wz` files and produces a plain file tree under `assets/`:
 
-```text
-assets/
-|-- Character/
-|   |-- 00002000.img.json            # full property tree
-|   `-- 00002000.img/
-|       |-- stand1/0/body.png        # canvas -> PNG
-|       `-- stand1/0/arm.png
-|-- Mob/9001000.img/...
-|-- Sound/Bgm00.img/FloralLife.mp3   # sound -> MP3/WAV
-`-- ...
-```
+| Path | What it is |
+|---|---|
+| `assets/Character/00002000.img.json` | Full property tree (JSON) |
+| `assets/Character/00002000.img/stand1/0/body.png` | Canvas → PNG |
+| `assets/Character/00002000.img/stand1/0/arm.png` | Canvas → PNG |
+| `assets/Mob/9001000.img/...` | Mob images and data |
+| `assets/Sound/Bgm00.img/FloralLife.mp3` | Sound → MP3/WAV |
+| `assets/...` | Everything else, mirroring the WZ structure |
 
 ## ✨ Features
 
