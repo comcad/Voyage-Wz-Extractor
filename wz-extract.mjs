@@ -223,7 +223,7 @@ class WzFile {
     h = (h - 0x581c3f6d) >>> 0;
     const s = h & 0x1f;
     h = ((h << s) | (h >>> (32 - s))) >>> 0;
-    return ((h ^ stored) >>> 0) + this.start * 2;
+    return (((h ^ stored) >>> 0) + this.start * 2) >>> 0;
   }
   _detectVersion() {
     for (let v = 1; v < 1000; v++) {
