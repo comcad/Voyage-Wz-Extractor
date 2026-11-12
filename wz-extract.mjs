@@ -226,7 +226,7 @@ class WzFile {
     return ((h ^ stored) >>> 0) + this.start * 2;
   }
   _detectVersion() {
-    for (let v = 1; v < 1000; v++) {
+    for (let v = 1; v < 100000; v++) {
       const { h, enc } = versionHash(v);
       if (enc !== this.enc) continue;
       this.hash = h;
