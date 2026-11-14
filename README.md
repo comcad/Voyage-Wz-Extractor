@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/f3327f7f-5a19-403d-b881-d540287cdf14" width="120" height="120" alt="Voyage MapleStory WZ extractor logo" />
+<img src="https://github.com/user-attachments/assets/f3327f7f-5a19-403d-b881-d540287cdf14" width="120" height="120" alt="Voyage WZ Extractor logo" />
 
-# Voyage WZ Extractor: Voyage-Client WZ File Extractor
+# Voyage WZ Extractor: Version 83 WZ File Extractor
 
-**A pure Node.js Voyage-Client v83 WZ extractor.** Turns `.wz` files into JSON, PNG, MP3, and WAV.
+**A pure Node.js WZ extractor for version 83 game files.** It turns `.wz` files into JSON, PNG, MP3 and WAV.
 
 <br />
 
@@ -19,7 +19,7 @@
 
 <br />
 
-An open-source **Voyage-Client WZ extractor** for **v83**. It reads a folder of `*.wz` files and writes plain JSON, PNG, and MP3/WAV files that your engine or **MapleStory web client** can load directly. One Node.js file, no dependencies. It is the asset extractor for [**Voyage Client**](https://github.com/comcad/Voyage-Client).
+An open-source **WZ extractor** for **version 83** game files. It reads a folder of `*.wz` files and writes plain JSON, PNG and MP3/WAV files that your engine or **web client** can load directly. It is one Node.js file with no dependencies, and it makes the assets folder that [**Voyage Client**](https://github.com/comcad/Voyage-Client), [Voyage-Server](https://github.com/comcad/Voyage-Server) and [Voyage-Editor](https://github.com/comcad/Voyage-Editor) read.
 
 ## 🚀 Usage
 
@@ -28,10 +28,10 @@ Requires **Node.js ≥ 18**. Nothing to install.
 ```sh
 git clone https://github.com/comcad/Voyage-Wz-Extractor
 cd Voyage-Wz-Extractor
-node wz-extract.mjs <path-to-wz-folder> ./assets
+node wz-extract.mjs <path-to-wz-folder> ../voyage-assets
 ```
 
-Then copy the `assets` folder into the root of [Voyage Client](https://github.com/comcad/Voyage-Client).
+This writes the assets folder beside the extractor (`voyage-assets`), where Voyage Client, Voyage-Server and Voyage-Editor look for it by default.
 
 > 📝 **Note:** Use the `.wz` files provided by [Cosmic](https://github.com/P0nk/Cosmic) for full compatibility.
 
@@ -62,27 +62,26 @@ node wz-extract.mjs ./wz ./assets --resume
 
 ## 📄 License
 
-MIT
+- **License:** [MIT](LICENSE)
 
 
 ## ⚠️ Disclaimer
 
 ### No Game Assets Included
-This repository contains **no** copyrighted Nexon assets. That includes `.wz` files, extracted images, audio, maps, and any other game data. It contains only original source code written by the contributors.
+This repository contains **no** copyrighted game assets: no `.wz` files, extracted images, audio, maps or any other game data. It contains only source code.
 
-To use this software, you must supply your own legally obtained copy of the game files. You are solely responsible for ensuring you have the legal right to possess and use them. The contributors do not provide, host, link to, or distribute these files and will not assist in obtaining them.
+To use this software, you must supply your own legally obtained copy of the game files. You are solely responsible for making sure you have the legal right to possess and use them. The contributors do not provide, host, link to or distribute these files, and will not help anyone obtain them.
 
 ### Intended Use
-This software is provided for educational, research, and interoperability purposes, and for use with self-hosted servers on a private, non-commercial basis. It is not intended to circumvent any technological protection measure, to replace or compete with any official Nexon product or service, or to be used for commercial gain.
+This software is provided for educational, research and interoperability purposes, and for use with self-hosted servers on a private, non-commercial basis. It is not intended to circumvent any technological protection measure, to replace or compete with any official product or service, or to be used for commercial gain.
 
-The contributors do not sell this software, charge for access, or accept payment for in-game items or advantages. Anyone who does so with this software acts on their own account and at their own risk.
+The contributors do not sell this software, charge for access or accept payment for in-game items or advantages. Anyone who does so with this software acts on their own account and at their own risk.
 
 ### License Scope
-The MIT license in this repository applies **only** to the original source code written by the contributors. It grants no rights to any Nexon trademarks, assets, or other intellectual property.
+The MIT license in this repository applies **only** to the source code written by the contributors. It grants no rights to any third party's trademarks, assets or other intellectual property.
 
 ### No Warranty
 THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THIS SOFTWARE.
 
 ### Your Responsibility
-You are responsible for complying with all applicable laws and with any license or terms of service that apply to the game files and servers you use.
-
+You are responsible for complying with all applicable laws, and with any license or terms of service that apply to the game files and servers you use.
