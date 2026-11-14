@@ -2,13 +2,12 @@
 
 <img src="https://github.com/user-attachments/assets/f3327f7f-5a19-403d-b881-d540287cdf14" width="120" height="120" alt="Voyage MapleStory WZ extractor logo" />
 
-# Voyage WZ Extractor: MapleStory WZ File Extractor
+# Voyage WZ Extractor: Voyage-Client WZ File Extractor
 
-**A pure Node.js MapleStory v83 WZ extractor.** Turns `.wz` files into JSON, PNG, MP3, and WAV.
+**A pure Node.js Voyage-Client v83 WZ extractor.** Turns `.wz` files into JSON, PNG, MP3, and WAV.
 
 <br />
 
-![MapleStory v83](https://img.shields.io/badge/MapleStory-v83%20GMS-orange?style=for-the-badge)
 ![License](https://img.shields.io/github/license/comcad/Voyage-Wz-Extractor?style=for-the-badge)
 ![Node.js](https://img.shields.io/badge/Node.js-%E2%89%A5%2018-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
@@ -20,7 +19,7 @@
 
 <br />
 
-An open-source **MapleStory WZ extractor** for **v83 (GMS)**. It reads a folder of `*.wz` files and writes plain JSON, PNG, and MP3/WAV files that your engine or **MapleStory web client** can load directly. One Node.js file, no dependencies. It is the asset extractor for [**Voyage Client**](https://github.com/comcad/Voyage-Client).
+An open-source **Voyage-Client WZ extractor** for **v83**. It reads a folder of `*.wz` files and writes plain JSON, PNG, and MP3/WAV files that your engine or **MapleStory web client** can load directly. One Node.js file, no dependencies. It is the asset extractor for [**Voyage Client**](https://github.com/comcad/Voyage-Client).
 
 ## 🚀 Usage
 
@@ -68,26 +67,15 @@ MIT
 
 ## ⚠️ Disclaimer
 
-**Voyage Client is an unofficial, fan-made, non-commercial project. It is not affiliated with, endorsed by, sponsored by, or connected to Nexon Korea Corporation, Nexon America Inc., or any of their subsidiaries or affiliates ("Nexon").**
-
-### Trademarks & Copyright
-MapleStory, its name, logos, characters, artwork, music, sound effects, text, game data, and all related assets are the property of Nexon and its licensors. All trademarks and copyrights belong to their respective owners. The name "MapleStory" is used in this repository for identification and compatibility description only and does not imply any association with Nexon.
-
 ### No Game Assets Included
 This repository contains **no** copyrighted Nexon assets. That includes `.wz` files, extracted images, audio, maps, and any other game data. It contains only original source code written by the contributors.
 
 To use this software, you must supply your own legally obtained copy of the game files. You are solely responsible for ensuring you have the legal right to possess and use them. The contributors do not provide, host, link to, or distribute these files and will not assist in obtaining them.
 
-### No Nexon Code
-This is an independent implementation. It does not contain and was not derived from Nexon's proprietary client source code or binaries. It was written from observed network protocol behavior for interoperability purposes.
-
 ### Intended Use
 This software is provided for educational, research, and interoperability purposes, and for use with self-hosted servers on a private, non-commercial basis. It is not intended to circumvent any technological protection measure, to replace or compete with any official Nexon product or service, or to be used for commercial gain.
 
 The contributors do not sell this software, charge for access, or accept payment for in-game items or advantages. Anyone who does so with this software acts on their own account and at their own risk.
-
-### Official Servers
-Use of this software with Nexon's official servers is **not supported** and may violate Nexon's Terms of Service, potentially resulting in account action. Do not use it for that purpose.
 
 ### License Scope
 The MIT license in this repository applies **only** to the original source code written by the contributors. It grants no rights to any Nexon trademarks, assets, or other intellectual property.
@@ -97,7 +85,4 @@ THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPL
 
 ### Your Responsibility
 You are responsible for complying with all applicable laws and with any license or terms of service that apply to the game files and servers you use.
-
-### Takedown Requests
-If you are a rights holder and believe this repository infringes your rights, please contact **[xcomcadx@gmail.com]** or open an issue. Your request will be reviewed and addressed promptly.
 
